@@ -20,6 +20,6 @@ button {
 
 }
 button:active {
-    transform: scale(0.95); /* Pequeño efecto de "presión" */
+    transform: scale(0.95); 
     transition-duration: 0ms;
 }
