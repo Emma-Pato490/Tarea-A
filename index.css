@@ -19,7 +19,7 @@ button {
 
 
 }
-button:hover {
-    transform: scale(1.1); 
-    background-color: crimson; 
+button:active {
+    transform: scale(0.95); /* Pequeño efecto de "presión" */
+    transition-duration: 0ms;
 }
