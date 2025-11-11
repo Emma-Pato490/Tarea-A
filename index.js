@@ -6,7 +6,7 @@ function uno() {
 
 function dos() {
     let radio = parseFloat(prompt("Ingresar radio de la esfera"));
-    let volumen = (3/4) * (Math.PI) * (radio**3);
+    let volumen = (4/3) * (Math.PI) * (radio**3);
     alert(`El volumen de la esfera es de: ${volumen.toFixed(2)}`);
 }
 
@@ -50,19 +50,22 @@ function ocho() {
 }
 
 function nueve() {
-    let saldo = parseFloat(prompt("Inrgresar monto Ahorrado"));
-    let saldofin = (saldo) + (saldo*1.5) - (saldo);
-    alert (`El saldo mas el interes es del ${saldofin.toFixed(2)}`);
+    let saldo = parseFloat(prompt("Ingresar monto ahorrado:"));
+    let saldof = saldo + (saldo * 0.015);
+    alert(`El saldo más interés es de: ${saldof.toFixed(2)}`);
+
 }
 
 
 function diez() {
-    let horas = parseFloat(prompt("Ingresar horas trabajadas"));
-    horas += horas *20;
-    let montotal = (horas) - (horas *0.05);
-    alert (`subtotal" ${horas.toFixed(2)}`);
-    alert (`descuento ${horas*0.05.toFixed(2)}`);
-    alert (`El monto final que se le dara al docente es de ${montotal.toFixed(2)}`);
+    let horas = parseFloat(prompt("Ingresar horas trabajadas:"));
+    let subtotal = horas * 20;
+    let descuento = subtotal * 0.05;
+    let montotal = subtotal - descuento;
+
+    alert(`Subtotal: ${subtotal.toFixed(2)}`);
+    alert(`Descuento (5%): ${descuento.toFixed(2)}`);
+    alert(`El monto final que se le dará al docente es de: $${montotal.toFixed(2)}`);
 
 }
 
@@ -77,7 +80,7 @@ function once () {
 function doce () {
     let lecinicial= parseFloat(prompt("Ingresar lectura inicial"));
     let lecfinal = parseFloat(prompt("Ingresar lectura final "));
-    let lectotal = (lecinicial - lecfinal) * (0.015);
+    let lectotal = (lecfinal - lecinicial) * (0.015);
     lectotal += (lectotal) + (lectotal * 0.10);
     alert (`El monto total a pagar es de ${lectotal.toFixed(2)}`);
 }
